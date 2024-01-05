@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musnaeni web link</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      .box-terluar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        height: 100vh;
+        margin: auto;
+        background-image: url("gambar\ 3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        .box-saya {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 15px;
+          margin-top: 20px;
+        }
+        .box-saya img {
+          border-radius: 50%;
+          width: 180px;
+          height: 180px;
+          cursor: pointer;
+          margin-top: 20px;
+        }
+        .box-link {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          gap: 8px;
+      }
+
+      .box-link button {
+        background-color: rgb(95, 95, 3);
+        border: none;
+        padding: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 400ms ease-in-out;
+      }
+
+      .box-link button:hover {
+        background-color: black;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-terluar">
+      <div class="box-saya">
+        <img src="gambar 4.png" />
+        <h1>MUSNAENI</h1>
+        <p>Desainer</p>
+      </div>
+      <div class="box-link">
+        <button onclick="hayu('https://facebook.com')">Facebook</button>
+        <button onclick="hayu('https://instagram.com')">instagram</button>
+        <button onclick="hayu('https://whatsapp.com')">Whatsapp</button>
+        <button onclick="hayu('https://twitter.com')">Twitter</button>
+        <button onclick="hayu('https://telegram.com')">Telegram</button>
+      </div>
+    </div>
+    <script>
+      function hayu(kemana) {
+        window.open(kemana);
+      }
+    </script>
+  </body>
+</html>
